@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bandera de México</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>Bandera de México</h1>
+
+  <!-- Controles arriba -->
+  <div class="controls-container">
+    <!-- Verde -->
+    <div class="controls">
+      <label for="greenRange">Esperanza</label>
+      <input type="range" id="greenRange" min="0" max="255" value="153">
+      <p id="greenCode">#009900</p>
+    </div>
+
+    <!-- Blanco -->
+    <div class="controls">
+      <label>Unidad</label>
+      <p id="whiteCode">#FFFFFF</p>
+    </div>
+
+    <!-- Rojo -->
+    <div class="controls">
+      <label for="redRange">Sangre de nuestros héroes nacionales</label>
+      <input type="range" id="redRange" min="0" max="255" value="157">
+      <p id="redCode">#9D0000</p>
+    </div>
+  </div>
+
+  <!-- Bandera abajo -->
+  <div class="flag-container">
+    <div class="color-box" id="greenBox"></div>
+    <div class="color-box" id="whiteBox">
+      <pre>
+@@@@@
+@@@@@
+@@@@@
+      </pre>
+    </div>
+    <div class="color-box" id="redBox"></div>
+  </div>
+
+  <!-- Label debajo de la bandera -->
+  <p class="flag-label">Rivera Alameda Ramón Alberto</p>
+  <p class="flag-label">22200763</p>
+
+  <script src="script.js"></script>
+</body>
+</html>
